@@ -1,1 +1,1 @@
-web: gunicorn RunDashboard:app
+web: gunicorn flask_app.py
