@@ -1,1 +1,1 @@
-web: gunicorn flask_app:app --preload
+web: gunicorn app:flask_app
