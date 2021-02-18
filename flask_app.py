@@ -38,7 +38,7 @@ session=Session(engine)
 app = Flask(__name__)
 
 # Use flask_sqlalchemy to set up sql connection locally
-app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://postgres:{pw}@localhost:5432/WineAndDined'
+app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://postgres:Deez^nout3@localhost:5432/WineAndDined'
 db = SQLAlchemy(app)
 
 @app.route("/")
