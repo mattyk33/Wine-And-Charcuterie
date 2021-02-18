@@ -12,7 +12,7 @@ from config import pw
 # Database Setup
 ################################################
 
-engine = create_engine(f"postgresql://postgres:{pw}@localhost:5432/WineAndDined")
+engine = create_engine(f"postgresql://postgres:Deez^nout3@localhost:5432/WineAndDined")
 
 # reflect an existing database into a new model
 Base = automap_base()
