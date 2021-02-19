@@ -1,10 +1,12 @@
+alembic==1.4.0
 certifi==2020.12.5
 cffi==1.14.5
 config
 configparser==5.0.1
 cryptography==3.4.6
-django==3.1.6
 flask==1.1.2
+Flask-Migrate==2.5.2
+Flask-Script==2.0.6
 flask-sqlalchemy==2.4.4
 gunicorn==20.0.4
 ipython-genutils==0.2.0
