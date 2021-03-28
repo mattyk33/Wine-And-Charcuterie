@@ -12,7 +12,7 @@ from config import pw
 # Database Setup
 ################################################
 
-engine = create_engine(f"sqlite://WineAndDine.sqlite")
+engine = create_engine(f"sqlite:///WineAndDine.sqlite")
 
 # reflect an existing database into a new model
 Base = automap_base()
@@ -38,7 +38,7 @@ session=Session(engine)
 app = Flask(__name__)
 
 # Use flask_sqlalchemy to set up sql connection locally
-app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite://WineAndDine.sqlite'
+app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///WineAndDine.sqlite'
 db = SQLAlchemy(app)
 
 @app.route("/")
