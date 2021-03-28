@@ -158,7 +158,7 @@ def cheesepair(variety):
         cn_dic["cheeseid"]=cheeseid
         cnDict.append(cn_dic)
     
-
+    session.close()
     return jsonify(cnDict)
 
 
@@ -186,6 +186,8 @@ def meatpair(countryIn):
         meat_dict["region"]=region
         meat_dict["description"]=description
         meatDict.append(meat_dict)
+
+    session.close()
     return jsonify(meatDict)
 
 if __name__ == '__main__':
