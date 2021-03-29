@@ -429,7 +429,8 @@ function updateTable(countryIn) {
                                         message += `${i + 1}. ${cheese}`;
                                         message += newLine
                                     };
-                                    message += "For more information on these cheeses, check out cheese.com.";
+                                    var txt = "cheese.com";
+                                    message += "For more information on these cheeses, check out cheese.com";
                             }
                             
                             // If there is only information for meats

@@ -118,7 +118,7 @@ def buildtable(countryIn=None,dropDown=None):
         order_dict["vintage"]=vintage
         orderDict.append(order_dict)
 
-    session.close()
+    
     print(orderDict)
     return jsonify(orderDict)
 
@@ -165,7 +165,7 @@ def cheesepair(variety):
 @app.route("/api/v1.0/meatpair/<countryIn>")
 def meatpair(countryIn):
     """Returns a suggested meat pairing for the wine."""
-    
+
     print("here", countryIn)
     spl=countryIn.split(" ")
     if len(spl)==1:
